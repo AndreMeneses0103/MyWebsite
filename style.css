@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Nunito Sans', monospace;
+}
+
+body{
+    background: #F0EBD8;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 100px 0px 10px 0px;
+}
+
+h3{
+    margin: 40px 10%;
+}
+
+.av_text{
+    margin: 10px 5%;
+}
+
+.title {
+    margin: 60px 0px 0px 0px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.subtitle {
+    color: #292828;
+}
+
+hr{
+    border: 1px solid rgb(0, 0, 0);
+}
+svg{
+    width: 150px;
+    height: 150px;
+    margin: 40px 0px 0px 0px;
+}
+
+svg:hover{
+    transition: 0.1s;
+    transform: scale(1.1,1.1);
+}
+
+p{
+    margin: 0px 0px 20px 0px;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.All_Logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo_container{
+    flex-basis: 50%;
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li{
+    margin: 0px 30px;
+}
+
+.Head {
+    background-color: #1D2D44;
+    height: 50px;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#git_icon, #link_icon, #email_icon, #twitter_icon{
+    transform: scale(2,2);
+}
+
+.icon_btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+/* .icon_btn:hover{
+    animation: animIcon 0.3s ease forwards;
+} */
+
+#git_btn:hover{
+    animation: animIconGit 0.3s ease forwards;
+}
+#linkedin_btn:hover{
+    animation: animIconLink 0.3s ease forwards;
+}
+#email_btn:hover{
+    animation: animIconEmail 0.3s ease forwards;
+}
+#twitter_btn:hover{
+    animation: animIconTwitter 0.3s ease forwards;
+}
+
+@keyframes animIconGit {
+    0% {
+        color: #fff;
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+        color: #883bec;
+    }
+}
+
+@keyframes animIconLink {
+    0% {
+        color: #fff;
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+        color: #0e76a8;
+    }
+}
+
+@keyframes animIconEmail {
+    0% {
+        color: #fff;
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+        color: #c71610;
+    }
+}
+
+@keyframes animIconTwitter {
+    0% {
+        color: #fff;
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+        color: #4f5255;
+    }
+}
+
+.Main_Display {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: #0D1321;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    min-width: 350px;
+    overflow-x: hidden;
+}
+.All_Names{
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    padding: 5%;
+    /* width: 100%; */
+}
+.Name {
+    color: #fff;
+    font-family: 'Nunito Sans', monospace;
+    font-size: 50px;
+    overflow: hidden;
+    border-right: 1px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+}
+
+.Name_Info {
+    color: #fff;
+    text-align: center;
+    font-family: 'Nunito Sans', monospace;
+}
+
+.Profile_Photo{
+    margin: 30px;
+}
+
+#myphoto{
+    width: 40%;
+    /* min-width: 50%; */
+    border-radius: 50%;
+    border: solid black 1px;
+    object-fit: cover;
+}
+
+.rm_title, .app_title{
+    margin: 40px 0px 20px 0px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.rm_itens, .app_itens{
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 0px 0px 70px 0px;
+}
+.rm_text, .app_text{
+    text-align: justify;
+    margin: 0px 30px 0px 40px;
+    font-size: 18px;
+    flex: 1;
+    line-height: 40px;
+}
+
+#rm_image{
+    width: 80%;
+    border: solid 1px black;
+}
+
+
+#app_image{
+    max-width: 90%;
+    height: auto;
+}
+
+#av_icon{
+    margin: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.av_option{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.center_form{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    background: #748CAB;
+    margin: 5% 10px 2% 10px;
+    max-width: 500px;
+    border-radius: 30px 5px 30px 5px;
+    border: solid 1px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* right: 0; */
+}
+
+.All_Projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.git_project{
+    flex: 50%;
+    padding: 30px; 
+    box-sizing: border-box;
+    border: none;
+}
+
+.project_btn{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #3E5C76;
+    color: #fff;
+    text-decoration: none;
+    border: solid 3px #748CAB;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.project_btn:hover{
+    transition: 0.1s;
+    transform: scale(1.05,1.05);
+}
+
+/* .project_btn span {
+    margin-left: 10px;
+} */
+#project_title{
+    margin: 10px;
+}
+
+#project_desc{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#project_itens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tests{
+    margin: auto;
+    width: 100%;
+}
+
+.email_input {
+    width: 70%;
+    text-align: start;
+    padding: 5px;
+    background: #dddddd;
+    margin: 10px 0px 10px 0px;
+}
+
+#cont_name{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 0.9rem;
+    border-bottom: solid 1.5px #000000;
+}
+
+input, textarea:focus{
+    outline: none;
+}
+
+#cont_title{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 0.9rem;
+    border-bottom: solid 1.5px #000000;
+}
+#cont_text{
+    height: 150px;
+    width: 310px;
+    margin: 0px 10px 0px 10px;
+    resize: none;
+}
+
+.cont_btn{
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #2c94f7;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.link_btn{
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #2c94f7;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.repos_btn{
+    padding: 10px;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #883bec;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.repos_btn:hover{
+    transition: 0.1s;
+    transform: scale(1.05,1.05);
+}
+
+.link_btn:hover{
+    transition: 0.1s;
+    transform: scale(1.05,1.05);
+}
+
+.cont_btn:hover{
+    transition: 0.1s;
+    transform: scale(1.05,1.05);
+}
+
+.Text_Anim {
+    position: absolute;
+    z-index: -1;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+}
+
+#anim1{
+    top: calc(100vh - 100vh);
+    left: -100px;
+    color: rgb(90, 240, 90);
+    animation: direitaEsquerda 10s ease infinite;
+}
+#anim2{
+    top: calc(100vh - 90vh);
+    left: -100px;
+    color: rgb(33, 90, 248);
+    animation: esquerdaDireita 6s ease infinite;
+}
+#anim3{
+    top: calc(100vh - 80vh);
+    left: -100px;
+    color: rgb(202, 24, 24);
+    animation: direitaEsquerda 14s ease infinite;
+}
+#anim4{
+    top: calc(100vh - 70vh);
+    left: -100px;
+    color: rgb(114, 31, 190);
+    animation: esquerdaDireita 12s ease infinite;
+}
+#anim5{
+    top: calc(100vh - 60vh);
+    left: -100px;
+    color: rgb(255, 235, 51);
+    animation: direitaEsquerda 8s ease infinite;
+}
+#anim6{
+    top: calc(100vh - 50vh);
+    left: -100px;
+    color: rgb(206, 111, 22);
+    animation: esquerdaDireita 9s ease infinite;
+}
+#anim7{
+    top: calc(100vh - 40vh);
+    left: -100px;
+    color: rgb(74, 248, 161);
+    animation: direitaEsquerda 11s ease infinite;
+}
+#anim8{
+    top: calc(100vh - 30vh);
+    left: -100px;
+    color: rgb(141, 253, 36);
+    animation: esquerdaDireita 7s ease infinite;
+}
+#anim9{
+    top: calc(100vh - 20vh);
+    left: -100px;
+    color: rgb(255, 51, 51);
+    animation: direitaEsquerda 15s ease infinite;
+}
+#anim10{
+    top: calc(100vh - 15vh);
+    left: -100px;
+    color: rgb(196, 42, 188);
+    animation: esquerdaDireita 12s ease infinite;
+}
+
+@keyframes direitaEsquerda {
+    0% {
+        transform: translateX(calc(110vw));
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes esquerdaDireita {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(calc(110vw));
+    }
+}
