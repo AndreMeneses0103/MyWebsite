@@ -274,6 +274,11 @@ li{
     border: solid 1px black;
 }
 
+.rm_image{
+    width: 60%;
+    min-width: 400px;
+}
+
 
 #app_image{
     max-width: 90%;
