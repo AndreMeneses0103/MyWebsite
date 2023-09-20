@@ -65,6 +65,9 @@ function sendEmail() {
         text = text.replace(/\n/g, '%0A');
         link = "mailto:andremeneses0103@gmail.com?subject=" + title + "&body=Message%20written%20by%20"+name+"%0A%0A" + text;
         window.open(link);
+        document.getElementById("cont_name").value="";
+        document.getElementById("cont_title").value="";
+        document.getElementById("cont_text").value="";
     }
 }
 
